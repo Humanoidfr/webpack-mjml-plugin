@@ -48,10 +48,11 @@ WebpackMjmlStore.prototype.apply = function (compiler) {
         that.tasks.push(that.handleFile(file, outputFile));
         compilation.fileDependencies.add(file);
 
-        const data = await that.convertFile(file, false);
-        compilation.emitAsset(basename(outputFile), new RawSource(data), {
-          javascriptModule: false
-        });
+        // TLDR: we don't want to emit the file in the dist folder
+        // const data = await that.convertFile(file, false);
+        // compilation.emitAsset(basename(outputFile), new RawSource(data), {
+        //   javascriptModule: false
+        // });
       }
 
       Promise.all(that.tasks).then(callback());
