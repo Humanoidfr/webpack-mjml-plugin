@@ -1,3 +1,10 @@
+> [!WARNING]
+> **Ce dépôt a été migré sur GitLab le 25/09/2026 et n'est plus maintenu ici.**
+>
+> - Nouveau dépôt : https://gitlab.humanoid.fr/humanoid/webpack-mjml-plugin
+> - Contributions et merge requests se font désormais depuis GitLab.
+> - Ce dépôt GitHub est archivé en lecture seule. Suivi de la migration : PRO-6330.
+
 <div align="center">
   <img
     width="500px"
